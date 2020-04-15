@@ -1,2 +1,2 @@
-# prarking-lot
+# parking-lot
 Test for new project
