@@ -4,7 +4,7 @@
   "description": "Test for new project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 5000 --exit -r ts-node/register './**/*.spec.ts'"
   },
   "repository": {
     "type": "git",
@@ -12,8 +12,21 @@
   },
   "author": "",
   "license": "ISC",
+  "bin": {
+    "bin/setup": "npm install"
+  },
   "bugs": {
     "url": "https://github.com/tdhai/parkingLot/issues"
   },
-  "homepage": "https://github.com/tdhai/parkingLot#readme"
+  "homepage": "https://github.com/tdhai/parkingLot#readme",
+  "dependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.1",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1"
+  }
 }
