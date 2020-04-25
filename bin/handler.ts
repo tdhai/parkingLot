@@ -1,7 +1,4 @@
 
-import * as fs from 'fs';
-const Path = 'input.txt'
-
 class ParkingLot {
   parkingTemp = [];
   count = 0
@@ -94,13 +91,4 @@ class ParkingLot {
   })
 }
 
-const main = () => {
-  const parkingLot = new ParkingLot()
-  const inputs = fs.readFileSync(Path, 'utf8').split("\n")
-  for (let i = 0; i < inputs.length; i++) {
-    const items = inputs[i].split(" ")
-    parkingLot.process(items)
-  }
-}
-
-main()
+export const parkingLot = new ParkingLot()

@@ -1,5 +1,5 @@
 import * as assert from 'assert';
-import {parkingLot} from './parkingLot'
+import { parkingLot } from './handler'
 import {
   wrongInputCommand, 
   wrongCarIdPark, 
@@ -18,7 +18,6 @@ describe('#ParkingLot test case', ()=>{
 
     it("wrong carId when pard", ()=>{
       const result = parkingLot.process(wrongCarIdPark)
-      console.log("!23123123asd", result)
       assert.equal(result ,Error)
     })    
 
