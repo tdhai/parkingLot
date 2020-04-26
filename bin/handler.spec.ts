@@ -12,22 +12,22 @@ import {
 describe('#ParkingLot test case', ()=>{
   describe("bad case", ()=>{
     it("wrong input command", ()=>{
-      const result = parkingLot.process(wrongInputCommand)
+      const result = parkingLot.mapper(wrongInputCommand)
       assert.equal(result ,Error)
     })    
 
     it("wrong carId when pard", ()=>{
-      const result = parkingLot.process(wrongCarIdPark)
+      const result = parkingLot.mapper(wrongCarIdPark)
       assert.equal(result ,Error)
     })    
 
     it("wrong carId when leave", ()=>{
-      const result = parkingLot.process(wrongCarIdLeave)
+      const result = parkingLot.mapper(wrongCarIdLeave)
       assert.equal(result ,Error)
     })    
     
     it("wrong size when create", ()=>{
-      const result = parkingLot.process(wrongSizeCreate)
+      const result = parkingLot.mapper(wrongSizeCreate)
       assert.equal(result ,Error)
     })    
   })
@@ -37,7 +37,7 @@ describe('#ParkingLot test case', ()=>{
     let result
     for (let i = 0; i < niceInputs.length; i++) {
       const items = niceInputs[i].split(" ")
-      result = parkingLot.process(items)
+      result = parkingLot.mapper(items)
     }
     assert.deepEqual(result ,expectResult)
     })

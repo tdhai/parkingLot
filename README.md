@@ -5,16 +5,7 @@ Test for new project.
 * NodeJS 12+
 * Visual Studio Code
 
-Please insall all package when run
-
-        npm install
-
-Can be executed using Mocha
-
-        npm test
-
-Can be run file function
-
-        ts-node index.ts or ts-node ./index
-
-
+## To install all dependencies, compile and run tests:
+$ ./bin/setup
+## To run the code so it accepts input from a file:
+$ ./bin/parking_lot

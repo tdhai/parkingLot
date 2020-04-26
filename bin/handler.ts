@@ -68,7 +68,7 @@ class ParkingLot {
     return this.parkingTemp;
   }
 
-  public process = ((rows: string[]) => {
+  public mapper = ((rows: string[]) => {
     const mapping = {
       "create_parking_lot": this.create_parking_lot,
       "park": this.park,
