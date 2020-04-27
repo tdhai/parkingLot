@@ -7,5 +7,9 @@ Test for new project.
 
 ## To install all dependencies, compile and run tests:
 $ ./bin/setup
+
 ## To run the code so it accepts input from a file:
 $ ./bin/parking_lot
+
+## Then you run setup and run code but it dont work, please install ts-node as global
+$ sudo npm install -g ts-node typescript
