@@ -22,7 +22,7 @@
   "homepage": "https://github.com/tdhai/parkingLot#readme",
   "dependencies": {
     "@types/mocha": "^7.0.2",
-    "mocha": "^6.2.2"
+    "mocha": "^10.2.0"
   },
   "devDependencies": {
     "@types/node": "^13.11.1",
